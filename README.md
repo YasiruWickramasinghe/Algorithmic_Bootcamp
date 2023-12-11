@@ -2,7 +2,7 @@
 
 This repository is dedicated to the exploration and implementation of fundamental data structures and algorithms using Java language
 
-##) Data Structures
+## Data Structures
 
 	1) Arrays
 	2) Linked Lists
