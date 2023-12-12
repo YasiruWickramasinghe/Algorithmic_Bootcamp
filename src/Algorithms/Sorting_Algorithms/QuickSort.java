@@ -1,6 +1,9 @@
 package Algorithms.Sorting_Algorithms;
 
 public class QuickSort {
+    //Description:
+
+    //Steps:
     public static void main(String[] args) {
         quickSort();
     }

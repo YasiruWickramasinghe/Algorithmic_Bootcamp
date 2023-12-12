@@ -1,6 +1,9 @@
 package Algorithms.Sorting_Algorithms;
 
 public class MergeSort {
+    //Description:
+
+    //Steps:
     public static void main(String[] args) {
         mergeSort();
     }
