@@ -4,6 +4,10 @@ public class BinarySearch {
     //Description:
 
     //Steps:
+
+    //Pseudo Code:
+
+
     public static void main(String[] args) {
         binarySearch();
     }

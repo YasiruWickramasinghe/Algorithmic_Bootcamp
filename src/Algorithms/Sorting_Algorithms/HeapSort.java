@@ -4,6 +4,9 @@ public class HeapSort {
     //Description:
 
     //Steps:
+
+    //Pseudo Code:
+
     public static void main(String[] args) {
         heapSort();
     }
