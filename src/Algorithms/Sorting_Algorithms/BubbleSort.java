@@ -70,13 +70,18 @@ public class BubbleSort {
      */
 
     public static void main(String[] args) {
-        int arr[] = {45,24,68,27,95,32,15,75,82,64,52,13};
+        int arr[] = {5, 2, 9, 1, 5};
         System.out.println("Before Sorting Array: " + Arrays.toString(arr));
 
         int sortedArr[] = bubbleSort(arr);
-        int sortedArrEfficientWay[] = efficientBubbleSort(arr);
         System.out.println("After Sorting Array: " + Arrays.toString(sortedArr));
+
+        //to check this efficient way sorting comment sorted array above and uncomment this
+
+        /*
+        int sortedArrEfficientWay[] = efficientBubbleSort(arr);
         System.out.println("After Sorting Array with Efficient Way: " + Arrays.toString(sortedArrEfficientWay));
+        */
     }
     public static int[] bubbleSort(int[] arr){
         int length = arr.length;
@@ -89,6 +94,7 @@ public class BubbleSort {
                     arr[j+1] = temp;
                 }
             }
+            System.out.println("normal way: "+Arrays.toString(arr));
         }
         return arr;
     }
@@ -148,6 +154,7 @@ public class BubbleSort {
             if(!swap){
                 break;
             }
+            System.out.println("efficient way: "+Arrays.toString(arr));
         }
         return arr;
     }
