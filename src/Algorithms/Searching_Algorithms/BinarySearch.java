@@ -38,7 +38,7 @@ public class BinarySearch {
             return -1  // Target not found
          end function
 
-         //Example
+         //Test
 
          array = [1, 3, 5, 7, 9, 11]
          target = 7

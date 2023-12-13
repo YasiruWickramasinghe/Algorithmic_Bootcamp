@@ -24,7 +24,7 @@ public class LinearSearch {
             return -1
          end function
 
-         //Example
+         //Test
 
          array = [1, 3, 5, 7, 9, 11]
          target = 7
