@@ -15,6 +15,14 @@ public class SelectionSort {
         //Move Boundary: Move the boundary between the sorted and unsorted parts one step to the right.
         //Repeat: Repeat steps 2-4 until the entire array is sorted.
 
+        //define array
+        //define for loop for each passes 0 to length-1
+        //define minimum index as i
+        //define another for loop for the check minimum value
+        //define j value and its set to i+1
+        //check if A[j] value is less than the a[minIndex] if yes then set minIndex to j
+        //after inner for loop check minIndex is not equal to i value if not equal then swap the A[i] and a[minIndex]
+
     /*
             Test :
 
@@ -111,7 +119,7 @@ public class SelectionSort {
             int temp = arr[i];
             arr[i] = arr[minIndex];
             arr[minIndex] = temp;
-            System.out.println("normal way: "+Arrays.toString(arr));
+            System.out.println("normal way - Pass "+ i + ": "+Arrays.toString(arr));
         }
         return arr;
     }
@@ -175,7 +183,7 @@ public class SelectionSort {
                 arr[i] = arr[minIndex];
                 arr[minIndex] = temp;
 
-                System.out.println("efficient way: "+Arrays.toString(arr));
+                System.out.println("efficient way: Pass "+ i + ": "+Arrays.toString(arr));
             }
 
         }

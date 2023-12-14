@@ -9,6 +9,12 @@ public class InsertionSort {
             //and inserting them into their correct position in the sorted part. It is like sorting a hand of playing cards.
 
         //Steps:
+
+            //Initialization: The first element is considered the sorted part, and the rest is unsorted initially.
+            //Insertion: Take an element from the unsorted part and insert it into its correct position in the sorted part.
+            //Move Boundary: Move the boundary between the sorted and unsorted parts one step to the right.
+            //Repeat: Repeat steps 2-3 until the entire array is sorted.
+
             // create array
             // define for loop and loop through the whole array - i started from 1
             // then inside for loop create key variable and save it to the i value
@@ -120,7 +126,7 @@ public class InsertionSort {
             //after all replace the key value position j
            arr[j+1] = key;
 
-           System.out.println(Arrays.toString(arr));
+           System.out.println("Pass: " + i + ": " + Arrays.toString(arr));
        }
         return  arr;
     }
