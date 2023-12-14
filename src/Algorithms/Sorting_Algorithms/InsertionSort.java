@@ -84,25 +84,6 @@ public class InsertionSort {
              print("After Sorting Array: ", array);
        */
 
-
-    public static void main(String[] args) {
-        int[] arrs = {7, 4, 10, 3, 2, 11};
-
-        System.out.println("before sorting");
-        for(int arr: arrs){
-            System.out.print(arr + ",");
-        }
-        System.out.println();
-
-        int[] sortedArrs = insertionSort(arrs);
-
-        System.out.println("after sorting");
-        for(int sortedArr: sortedArrs){
-            System.out.print(sortedArr + ",");
-        }
-
-
-    }
     public static int[] insertionSort(int[] arr){
         int size = arr.length;
 
@@ -129,6 +110,25 @@ public class InsertionSort {
            System.out.println("Pass: " + i + ": " + Arrays.toString(arr));
        }
         return  arr;
+    }
+
+    public static void main(String[] args) {
+        int[] arrs = {7, 4, 10, 3, 2, 11};
+
+        System.out.println("before sorting");
+        for(int arr: arrs){
+            System.out.print(arr + ",");
+        }
+        System.out.println();
+
+        int[] sortedArrs = insertionSort(arrs);
+
+        System.out.println("after sorting");
+        for(int sortedArr: sortedArrs){
+            System.out.print(sortedArr + ",");
+        }
+
+
     }
 }
 

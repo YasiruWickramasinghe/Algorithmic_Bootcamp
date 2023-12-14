@@ -69,20 +69,6 @@ public class BubbleSort {
              print("After Sorting Array: ", sortedArr);
      */
 
-    public static void main(String[] args) {
-        int arr[] = {5, 2, 9, 1, 5};
-        System.out.println("Before Sorting Array: " + Arrays.toString(arr));
-
-        int sortedArr[] = bubbleSort(arr);
-        System.out.println("After Sorting Array: " + Arrays.toString(sortedArr));
-
-        //to check this efficient way sorting comment sorted array above and uncomment this
-
-        /*
-        int sortedArrEfficientWay[] = efficientBubbleSort(arr);
-        System.out.println("After Sorting Array with Efficient Way: " + Arrays.toString(sortedArrEfficientWay));
-        */
-    }
     public static int[] bubbleSort(int[] arr){
         int length = arr.length;
 
@@ -157,5 +143,20 @@ public class BubbleSort {
             System.out.println("efficient way: "+Arrays.toString(arr));
         }
         return arr;
+    }
+
+    public static void main(String[] args) {
+        int arr[] = {5, 2, 9, 1, 5};
+        System.out.println("Before Sorting Array: " + Arrays.toString(arr));
+
+        int sortedArr[] = bubbleSort(arr);
+        System.out.println("After Sorting Array: " + Arrays.toString(sortedArr));
+
+        //to check this efficient way sorting comment sorted array above and uncomment this
+
+        /*
+        int sortedArrEfficientWay[] = efficientBubbleSort(arr);
+        System.out.println("After Sorting Array with Efficient Way: " + Arrays.toString(sortedArrEfficientWay));
+        */
     }
 }

@@ -98,6 +98,52 @@ public class QuickSort {
         print("After Sorting Array: ", array)
     */
 
+    public static int[] quickSort(int[] arr, int low, int high){
+        if(low < high){
+            // Partition the array and get the pivot index
+            int pivotIndex = partition(arr,low,high);
+
+            // Recursively sort the sub arrays on both sides of the pivot
+            quickSort(arr, low, pivotIndex-1 );
+            quickSort(arr,pivotIndex+1 , high);
+        }
+
+        return arr;
+
+    }
+
+    private static int partition(int[] arr, int low, int high) {
+        // Choose the rightmost element as the pivot
+        int pivot = arr[high];
+
+        // Initialize the index of the smaller element
+        int i = low - 1;
+
+        // Iterate through the array
+        for (int j = low; j < high; j++) {
+
+            // If the current element is smaller than or equal to the pivot
+            if (arr[j] < pivot) {
+                //increment i value because in start i value is -1
+                i++;
+
+                // Swap arr[i] and arr[j]
+                int temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+
+        // Swap arr[i+1] and the pivot
+        int temp = arr[i + 1];
+        arr[i + 1] = arr[high];
+        arr[high] = temp;
+
+        System.out.println("within partitioning:" + Arrays.toString(arr));
+
+        // Return the index of the pivot
+        return i + 1;
+    }
 
     public static void main(String[] args) {
         int[] arrs = {7, 97 , 4, 11, 10, 51,  3, 75, 2, 7, 48};
@@ -114,44 +160,6 @@ public class QuickSort {
         for(int arr: sortedArrs){
             System.out.print(arr+",");
         }
-    }
-    public static int[] quickSort(int[] arr, int low, int high){
-        if(low < high){
-            int pivotIndex = partition(arr,low,high);
-
-            quickSort(arr, low, pivotIndex-1 );
-            quickSort(arr,pivotIndex+1 , high);
-        }
-
-        return arr;
-
-    }
-
-    private static int partition(int[] arr, int low, int high) {
-        // Choose the rightmost element as the pivot
-        int pivot = arr[high];
-
-        // Initialize the index of the smaller element
-        int i = low - 1;
-
-        for (int j = low; j < high; j++) {
-            if (arr[j] < pivot) {
-                i++;
-                // Swap arr[i] and arr[j]
-                int temp = arr[i];
-                arr[i] = arr[j];
-                arr[j] = temp;
-            }
-        }
-
-        // Swap arr[i+1] and the pivot
-        int temp = arr[i + 1];
-        arr[i + 1] = arr[high];
-        arr[high] = temp;
-
-        System.out.println("within partitioning:" + Arrays.toString(arr));
-
-        return i + 1;
     }
 
 }

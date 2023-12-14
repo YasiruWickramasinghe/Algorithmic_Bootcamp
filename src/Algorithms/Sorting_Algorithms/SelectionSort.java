@@ -88,19 +88,7 @@ public class SelectionSort {
  */
 
 
-    public static void main(String[] args) {
-        int arr[] = {7, 4, 10, 3, 2, 11};
-        System.out.println("Before Sorting Array: " + Arrays.toString(arr));
 
-        int sortedArr[] = selectionSort(arr);
-        System.out.println("After Sorting Array: " + Arrays.toString(sortedArr));
-
-        //to check this efficient way sorting comment sorted array above and uncomment this
-        /*
-        int sortedArrEfficientWay[] = efficientSelectionSort(arr);
-        System.out.println("After Sorting Array with Efficient Way: " + Arrays.toString(sortedArrEfficientWay));
-         */
-    }
     public static int[] selectionSort(int[] arr){
         int size = arr.length;
 
@@ -188,5 +176,19 @@ public class SelectionSort {
 
         }
         return arr;
+    }
+
+    public static void main(String[] args) {
+        int arr[] = {7, 4, 10, 3, 2, 11};
+        System.out.println("Before Sorting Array: " + Arrays.toString(arr));
+
+        int sortedArr[] = selectionSort(arr);
+        System.out.println("After Sorting Array: " + Arrays.toString(sortedArr));
+
+        //to check this efficient way sorting comment sorted array above and uncomment this
+        /*
+        int sortedArrEfficientWay[] = efficientSelectionSort(arr);
+        System.out.println("After Sorting Array with Efficient Way: " + Arrays.toString(sortedArrEfficientWay));
+         */
     }
 }
