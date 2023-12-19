@@ -1,4 +1,4 @@
-package Algorithms.Sorting_Algorithms;
+package Algorithms._2_Sorting_Algorithms;
 
 import java.util.Arrays;
 
@@ -156,21 +156,21 @@ public class SelectionSort {
 
     **/
 
-    public static int[] efficientSelectionSort(int[] arr){
+    public static int[] efficientSelectionSort(int[] arr) {
         int size = arr.length;
 
         //check whether array is empty
-        if(size == 0){
+        if (size == 0) {
             return new int[0];
         }
 
-        for(int i = 0; i < size-1; i++){
+        for (int i = 0; i < size - 1; i++) {
             //set minimum to i
             int minIndex = i;
 
-            for(int j = i+1; j < size; j++){
+            for (int j = i + 1; j < size; j++) {
                 //check minimum number
-                if(arr[minIndex] > arr[j]){
+                if (arr[minIndex] > arr[j]) {
                     minIndex = j;
                 }
             }
@@ -182,7 +182,7 @@ public class SelectionSort {
                 arr[i] = arr[minIndex];
                 arr[minIndex] = temp;
 
-                System.out.println("efficient way: Pass "+ i + ": "+Arrays.toString(arr));
+                System.out.println("efficient way: Pass " + i + ": " + Arrays.toString(arr));
             }
 
         }

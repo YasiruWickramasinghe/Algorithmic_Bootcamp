@@ -1,4 +1,4 @@
-package Algorithms.Sorting_Algorithms;
+package Algorithms._2_Sorting_Algorithms;
 
 import java.util.Arrays;
 
@@ -87,44 +87,44 @@ public class InsertionSort {
              print("After Sorting Array: ", array);
        **/
 
-    public static int[] insertionSort(int[] arr){
+    public static int[] insertionSort(int[] arr) {
         int size = arr.length;
 
         //check whether array is empty
-        if(size == 0){
+        if (size == 0) {
             return new int[0];
         }
 
         //I started from 2nd element then check left side elements
-       for(int i=1; i < size; i++){
-           //save i value to key
-           int key = arr[i];
+        for (int i = 1; i < size; i++) {
+            //save i value to key
+            int key = arr[i];
 
-           //{7, 4, 10, 3, 2, 11};
-           // j  i
-           //j is 1 number less than i value
-           int j = i - 1;
+            //{7, 4, 10, 3, 2, 11};
+            // j  i
+            //j is 1 number less than i value
+            int j = i - 1;
 
-           //check jey value is less than j value and check j is not less than 0, if yes then shift j value to the j+1 potion
-           while(j>=0 && arr[j] > key){
-               //move j value to j+1 potion
-                arr[j+1] = arr[j];
+            //check jey value is less than j value and check j is not less than 0, if yes then shift j value to the j+1 potion
+            while (j >= 0 && arr[j] > key) {
+                //move j value to j+1 potion
+                arr[j + 1] = arr[j];
                 //then reduce j value by one
-                j=j-1;
-           }
+                j = j - 1;
+            }
             //after all replace the key value position j
-           arr[j+1] = key;
+            arr[j + 1] = key;
 
-           System.out.println("Pass: " + i + ": " + Arrays.toString(arr));
-       }
-        return  arr;
+            System.out.println("Pass: " + i + ": " + Arrays.toString(arr));
+        }
+        return arr;
     }
 
     public static void main(String[] args) {
         int[] arrs = {7, 4, 10, 3, 2, 11};
 
         System.out.println("before sorting");
-        for(int arr: arrs){
+        for (int arr : arrs) {
             System.out.print(arr + ",");
         }
         System.out.println();
@@ -132,7 +132,7 @@ public class InsertionSort {
         int[] sortedArrs = insertionSort(arrs);
 
         System.out.println("after sorting");
-        for(int sortedArr: sortedArrs){
+        for (int sortedArr : sortedArrs) {
             System.out.print(sortedArr + ",");
         }
 

@@ -1,4 +1,4 @@
-package Algorithms.Sorting_Algorithms;
+package Algorithms._2_Sorting_Algorithms;
 
 import java.util.Arrays;
 
@@ -73,23 +73,23 @@ public class BubbleSort {
              print("After Sorting Array: ", sortedArr);
      **/
 
-    public static int[] bubbleSort(int[] arr){
+    public static int[] bubbleSort(int[] arr) {
         int length = arr.length;
 
         //check whether array is empty
-        if(length == 0){
+        if (length == 0) {
             return new int[0];
         }
 
-        for(int i = 0; i < length; i++){
-            for(int j = 0; j < length-i-1; j++){
-                if(arr[j] > arr[j+1]){
+        for (int i = 0; i < length; i++) {
+            for (int j = 0; j < length - i - 1; j++) {
+                if (arr[j] > arr[j + 1]) {
                     int temp = arr[j];
-                    arr[j] = arr[j+1];
-                    arr[j+1] = temp;
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
                 }
             }
-            System.out.println("normal way: "+Arrays.toString(arr));
+            System.out.println("normal way: " + Arrays.toString(arr));
         }
         return arr;
     }
@@ -133,23 +133,23 @@ public class BubbleSort {
 
          */
 
-    public static int[] efficientBubbleSort(int[] arr){
+    public static int[] efficientBubbleSort(int[] arr) {
         int length = arr.length;
 
-        for(int i = 0; i < length; i++){
+        for (int i = 0; i < length; i++) {
             boolean swap = false;
-            for(int j = 0; j < length-i-1; j++){
-                if(arr[j] > arr[j+1]){
+            for (int j = 0; j < length - i - 1; j++) {
+                if (arr[j] > arr[j + 1]) {
                     int temp = arr[j];
-                    arr[j] = arr[j+1];
-                    arr[j+1] = temp;
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
                     swap = true;
                 }
             }
-            if(!swap){
+            if (!swap) {
                 break;
             }
-            System.out.println("efficient way: "+Arrays.toString(arr));
+            System.out.println("efficient way: " + Arrays.toString(arr));
         }
         return arr;
     }

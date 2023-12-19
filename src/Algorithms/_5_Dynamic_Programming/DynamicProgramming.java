@@ -1,4 +1,4 @@
-package Algorithms.Dynamic_Programming;
+package Algorithms._5_Dynamic_Programming;
 
 public class DynamicProgramming {
     //Description:

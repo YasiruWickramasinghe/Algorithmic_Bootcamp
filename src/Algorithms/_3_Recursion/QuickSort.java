@@ -1,23 +1,21 @@
-package Algorithms.Sorting_Algorithms;
+package Algorithms._3_Recursion;
 
 import java.util.Arrays;
 
 public class QuickSort {
+    // Description:
+        // Quick Sort is a divide-and-conquer algorithm that works by selecting a 'pivot' (pivot is central point of problem ) element
+        // and partitioning the other elements into two sub-arrays according to whether they are less than or greater than the pivot.
+        // The sub-arrays are then sorted recursively.
 
-    /**
-     Description:
-         Quick Sort is a divide-and-conquer algorithm that works by selecting a 'pivot' (pivot is central point of problem ) element
-         and partitioning the other elements into two sub-arrays according to whether they are less than or greater than the pivot.
-         The sub-arrays are then sorted recursively.
-
-     Steps:
-         Partitioning: Select a pivot element and partition the array into two sub-arrays. we use divide and conquer algorithm
-         Recursive Sort: Recursively apply Quick Sort to the sub-arrays.
-         Combine: No additional combine step is needed as the sorting is done in-place.
+    // Steps:
+        // Partitioning: Select a pivot element and partition the array into two sub-arrays. we use divide and conquer algorithm
+        // Recursive Sort: Recursively apply Quick Sort to the sub-arrays.
+        // Combine: No additional combine step is needed as the sorting is done in-place.
 
 
-
-        //Test:
+        /*
+        Test:
 
         Original array: [7, 4, 10, 3, 2, 11]
 
@@ -49,25 +47,20 @@ public class QuickSort {
             -> [2, 3, 4, 7, 10, 11]
 
         Sorted array: [2, 3, 4, 7, 10, 11]
+      */
 
 
+    /*
         Pseudo Code:
 
         function quickSort(A: list, low: int, high: int)
-             n = length(A)
+          if low < high
+              // Partition the array and get the index of the pivot element
+              pivotIndex = partition(A, low, high)
 
-             // check whether array is empty
-             if n equals 0
-                return new empty array
-             end if
-
-              if low < high
-                  // Partition the array and get the index of the pivot element
-                  pivotIndex = partition(A, low, high)
-
-                  // Recursively sort the sub-arrays
-                  quickSort(A, low, pivotIndex - 1)
-                  quickSort(A, pivotIndex + 1, high)
+              // Recursively sort the sub-arrays
+              quickSort(A, low, pivotIndex - 1)
+              quickSort(A, pivotIndex + 1, high)
 
         end function
 
@@ -103,16 +96,9 @@ public class QuickSort {
 
         quickSort(array, 0, length(array) - 1)
         print("After Sorting Array: ", array)
-    **/
+    */
 
     public static int[] quickSort(int[] arr, int low, int high){
-        int size = arr.length;
-
-        //check whether array is empty
-        if(size == 0){
-            return new int[0];
-        }
-
         if(low < high){
             // Partition the array and get the pivot index
             int pivotIndex = partition(arr,low,high);

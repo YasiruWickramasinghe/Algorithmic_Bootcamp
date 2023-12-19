@@ -1,4 +1,4 @@
-package Algorithms.Graph_Algorithms;
+package Algorithms._6_Graph_Algorithms;
 
 public class DijkstrasAlgorithm {
     //Description:

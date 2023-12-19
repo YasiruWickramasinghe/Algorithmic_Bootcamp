@@ -1,4 +1,4 @@
-package Algorithms.Searching_Algorithms;
+package Algorithms._1_Searching_Algorithms._2_BinarySearch._1_BaseAlgorithm;
 
 public class BinarySearch {
     /**
@@ -57,21 +57,21 @@ public class BinarySearch {
                 print("Target not found in the array")
      **/
 
-    public static int binarySearch(int[] arr,int target){
+    public static int binarySearch(int[] arr, int target) {
         int length = arr.length;
 
         //check whether array is empty
-        if(length == 0){
+        if (length == 0) {
             return -1;
         }
 
         int left = 0;
         int right = arr.length - 1;
 
-        while(left <= right){
-            int mid =  (left + right) / 2;
+        while (left <= right) {
+            int mid = (left + right) / 2;
 
-            if(arr[mid] == target){
+            if (arr[mid] == target) {
                 return mid;
             } else if (arr[mid] < target) {
                 left = mid + 1;
@@ -79,18 +79,18 @@ public class BinarySearch {
                 right = mid - 1;
             }
         }
-        return  -1;
+        return -1;
     }
 
     public static void main(String[] args) {
-        int arr[] = {1,2,3,4,5,6,7};
+        int arr[] = {1, 2, 3, 4, 5, 6, 7};
         int target = 5;
 
         int result = binarySearch(arr, target);
 
         if (result != -1) {
             System.out.println("Target found at index: " + result);
-        }else {
+        } else {
             System.out.println("Target not found in the array");
         }
     }

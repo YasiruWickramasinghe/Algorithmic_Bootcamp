@@ -1,4 +1,4 @@
-package Algorithms.Searching_Algorithms;
+package Algorithms._1_Searching_Algorithms._1_LinearSearch._1_BaseAlgorithm;
 
 public class LinearSearch {
     /**
@@ -44,16 +44,16 @@ public class LinearSearch {
      **/
 
     //using for loop
-    public static int linearSearch(int[] arr, int target){
+    public static int linearSearch(int[] arr, int target) {
         int length = arr.length;
 
         //check whether array is empty
-        if(length == 0){
+        if (length == 0) {
             return -1;
         }
 
-        for(int i = 0; i < length; i++){
-            if(arr[i] == target){
+        for (int i = 0; i < length; i++) {
+            if (arr[i] == target) {
                 return i;
             }
         }
@@ -71,11 +71,6 @@ public class LinearSearch {
             return -1;
         }
 
-        //check whether array is empty
-         if(length == 0){
-            return -1;
-        }
-
         for(int i: arr){
             if(arr[i] == target){
                 return i;
@@ -86,7 +81,7 @@ public class LinearSearch {
      */
 
     public static void main(String[] args) {
-        int arr[] = {1,2,3,4,5,6,7};
+        int arr[] = {1, 2, 3, 4, 5, 6, 7};
         int target = 4;
 
         int result = linearSearch(arr, target);
@@ -94,7 +89,7 @@ public class LinearSearch {
 
         if (result != -1) {
             System.out.println("Target found at index: " + result);
-        }else {
+        } else {
             System.out.println("Target not found in the array");
         }
     }

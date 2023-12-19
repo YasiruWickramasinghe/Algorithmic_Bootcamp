@@ -1,4 +1,4 @@
-package Algorithms.Divide_And_Conquer;
+package Algorithms._4_Divide_And_Conquer;
 
 public class DivideAndConquer {
     //Description:

@@ -1,8 +1,8 @@
-package Algorithms.Sorting_Algorithms;
+package Algorithms._3_Recursion;
 
 public class MergeSort {
 
-    /**
+    /*
         Description:
         Merge Sort is a divide-and-conquer algorithm that divides the array into two halves,
         recursively sorts them, and then merges the sorted halves.
@@ -14,14 +14,6 @@ public class MergeSort {
 
         Pseudo Code:
         function mergeSort(arr: list, low: int, high: int)
-             n = length(A)
-
-             // check whether array is empty
-             if n equals 0
-                 print "array is empty"
-                 return
-             end if
-
             if low < high
                 mid = (low + high) / 2
 
@@ -86,17 +78,9 @@ public class MergeSort {
 
         mergeSort(array, 0, length(array) - 1)
         print("After Sorting Array: ", array)
-    **/
+    */
 
     public static void mergeSort(int[] arr, int low, int high) {
-        int n = arr.length;
-
-        // Check whether the array is empty
-        if (n == 0) {
-            System.out.println("Array is empty. Nothing to sort.");
-            return;
-        }
-
         if (low < high) {
             // Find the middle point
             int mid = (low + high) / 2;
