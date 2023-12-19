@@ -4,30 +4,30 @@ import java.util.Arrays;
 
 public class InsertionSort {
 
-        //Description:
-            //Insertion Sort builds the sorted array one element at a time by repeatedly taking elements from the unsorted part
-            //and inserting them into their correct position in the sorted part. It is like sorting a hand of playing cards.
+    /**
+        Description:
+            Insertion Sort builds the sorted array one element at a time by repeatedly taking elements from the unsorted part
+            and inserting them into their correct position in the sorted part. It is like sorting a hand of playing cards.
 
-        //Steps:
+        Steps:
 
-            //Initialization: The first element is considered the sorted part, and the rest is unsorted initially.
-            //Insertion: Take an element from the unsorted part and insert it into its correct position in the sorted part.
-            //Move Boundary: Move the boundary between the sorted and unsorted parts one step to the right.
-            //Repeat: Repeat steps 2-3 until the entire array is sorted.
+            Initialization: The first element is considered the sorted part, and the rest is unsorted initially.
+            Insertion: Take an element from the unsorted part and insert it into its correct position in the sorted part.
+            Move Boundary: Move the boundary between the sorted and unsorted parts one step to the right.
+            Repeat: Repeat steps 2-3 until the entire array is sorted.
 
-            // create array
-            // define for loop and loop through the whole array - i started from 1
-            // then inside for loop create key variable and save it to the i value
-            // then create j variable and j is equal to i - 1
-                //{7, 4, 10, 3, 2, 11};
-                // j  i
-            // then create while loop and check j is less than 0 and A[j] is grater than the key value
-            // if yes, then shifting A[j] to A[j+1] also reduce the value of j
-            //then after while loop set A[j] to key value
+             create array
+             define for loop and loop through the whole array - i started from 1
+             then inside for loop create key variable and save it to the i value
+             then create j variable and j is equal to i - 1
+                {7, 4, 10, 3, 2, 11};
+                 j  i
+             then create while loop and check j is less than 0 and A[j] is grater than the key value
+             if yes, then shifting A[j] to A[j+1] also reduce the value of j
+            then after while loop set A[j] to key value
 
 
-        /*
-            Test :
+            //Test :
 
             Original array: [7, 4, 10, 3, 2, 11]
 
@@ -53,15 +53,18 @@ public class InsertionSort {
 
             Sorted array: [2, 3, 4, 7, 10, 11]
 
-          */
 
-
-    /*
-    /*
     Pseudo Code:
 
         function insertionSort(A: list)
-          n = length(A)
+
+         n = length(A)
+
+         // check whether array is empty
+         if n equals 0
+            return new empty array
+         end if
+
           for i from 1 to n-1
               // Take an element from the unsorted part
               key = A[i]
@@ -82,10 +85,15 @@ public class InsertionSort {
 
              insertionSort(array);
              print("After Sorting Array: ", array);
-       */
+       **/
 
     public static int[] insertionSort(int[] arr){
         int size = arr.length;
+
+        //check whether array is empty
+        if(size == 0){
+            return new int[0];
+        }
 
         //I started from 2nd element then check left side elements
        for(int i=1; i < size; i++){

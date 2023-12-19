@@ -3,21 +3,22 @@ package Algorithms.Sorting_Algorithms;
 import java.util.Arrays;
 
 public class BubbleSort {
-    //Description:
-        //Bubble Sort is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements,
-        //and swaps them if they are in the wrong order. The pass through the list is repeated until the list is sorted.
-        //It is not very efficient for large datasets, but it's easy to understand and implement.
+    /**
+    Description:
+        Bubble Sort is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements,
+        and swaps them if they are in the wrong order. The pass through the list is repeated until the list is sorted.
+        It is not very efficient for large datasets, but it's easy to understand and implement.
 
-    //Steps:
-        //declare an array
-        //pass array to function
-        //get length of array
-        //then we have to use two for loops, one for passes, another for comparison
-        //if we have 5 element in array we have 4 passes, first for loop for it,
-        //then our second for loop go through the one passes and compare adjacent element, if right element is less than left element then swap that two elements
+    Steps:
+        i)   declare an array
+        ii)  pass array to function
+        iii) get length of array
+        iv)  then we have to use two for loops, one for passes, another for comparison
+        v)   if we have 5 element in array we have 4 passes, first for loop for it,
+        vi)  then our second for loop go through the one passes and compare adjacent element, if right element is less than left element then swap that two elements
 
 
-            /*
+
             Test :
 
             Original array: [5, 2, 9, 1, 5]
@@ -42,14 +43,17 @@ public class BubbleSort {
 
             Sorted array: [1, 2, 5, 5, 9]
 
-          */
-
-    /*
     Pseudo Code:
 
         function bubbleSort(A: list)
 
           n = length(A)
+
+         // check whether array is empty
+         if n equals 0
+            return new empty array
+         end if
+
           for i from 0 to n-1
               for j from 0 to n-i-1
                   if A[j] > A[j+1]
@@ -67,10 +71,15 @@ public class BubbleSort {
 
              sortedArr = bubbleSort(arr);
              print("After Sorting Array: ", sortedArr);
-     */
+     **/
 
     public static int[] bubbleSort(int[] arr){
         int length = arr.length;
+
+        //check whether array is empty
+        if(length == 0){
+            return new int[0];
+        }
 
         for(int i = 0; i < length; i++){
             for(int j = 0; j < length-i-1; j++){

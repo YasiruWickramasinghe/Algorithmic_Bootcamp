@@ -3,28 +3,28 @@ package Algorithms.Sorting_Algorithms;
 import java.util.Arrays;
 
 public class SelectionSort {
-    //Description:
-        //Selection Sort divides the input array into two parts: the sorted and the unsorted. In each iteration,
-        // it finds the minimum element from the unsorted part and swaps it with the first element of the unsorted part.
-        // This process is repeated until the entire array is sorted.
+    /**
+    Description:
+        Selection Sort divides the input array into two parts: the sorted and the unsorted. In each iteration,
+         it finds the minimum element from the unsorted part and swaps it with the first element of the unsorted part.
+         This process is repeated until the entire array is sorted.
 
-    //Steps:
-        //Initialization: The entire array is considered unsorted initially.
-        //Find Minimum: Find the minimum element from the unsorted part of the array.
-        //Swap: Swap the minimum element with the first element of the unsorted part.
-        //Move Boundary: Move the boundary between the sorted and unsorted parts one step to the right.
-        //Repeat: Repeat steps 2-4 until the entire array is sorted.
+    Steps:
+        Initialization: The entire array is considered unsorted initially.
+        Find Minimum: Find the minimum element from the unsorted part of the array.
+        Swap: Swap the minimum element with the first element of the unsorted part.
+        Move Boundary: Move the boundary between the sorted and unsorted parts one step to the right.
+        Repeat: Repeat steps 2-4 until the entire array is sorted.
 
-        //define array
-        //define for loop for each passes 0 to length-1
-        //define minimum index as i
-        //define another for loop for the check minimum value
-        //define j value and its set to i+1
-        //check if A[j] value is less than the a[minIndex] if yes then set minIndex to j
-        //after inner for loop check minIndex is not equal to i value if not equal then swap the A[i] and a[minIndex]
+        define array
+        define for loop for each passes 0 to length-1
+        define minimum index as i
+        define another for loop for the check minimum value
+        define j value and its set to i+1
+        check if A[j] value is less than the a[minIndex] if yes then set minIndex to j
+        after inner for loop check minIndex is not equal to i value if not equal then swap the A[i] and a[minIndex]
 
-    /*
-            Test :
+            //Test :
 
             Original array: [7, 4, 10, 3, 2, 11]
 
@@ -50,11 +50,6 @@ public class SelectionSort {
 
             Sorted array: [2, 3, 4, 7, 10, 11]
 
-          */
-
-
-    /*
-    /*
     Pseudo Code:
 
         function selectionSort(A: list)
@@ -85,12 +80,17 @@ public class SelectionSort {
 
              selectionSort(array);
              print("After Sorting Array: ", array);
- */
+   **/
 
 
 
     public static int[] selectionSort(int[] arr){
         int size = arr.length;
+
+        //check whether array is empty
+        if(size == 0){
+            return new int[0];
+        }
 
         for(int i = 0; i < size-1; i++){
             //set minimum to i
@@ -112,23 +112,29 @@ public class SelectionSort {
         return arr;
     }
 
+    /**
     //More Efficient way in selection sort
 
-    // This Selection Sort algorithm, as implemented in the example, has already sorted the array after Pass 4. Pass 5 is just a redundant pass without any swaps,
+     This Selection Sort algorithm, as implemented in the example, has already sorted the array after Pass 4. Pass 5 is just a redundant pass without any swaps,
 
-    //steps
+    steps
 
-    //End of the first for loop check minIndex is equal to the i
-    //if minIndex and i value are same no swapping happened, therefore no need to swap
+    End of the first for loop check minIndex is equal to the i
+    if minIndex and i value are same no swapping happened, therefore no need to swap
 
-        /*
         Pseudo Code:
 
         Pseudo Code:
 
         function selectionSort(A: list)
 
-          n = length(A)
+         n = length(A)
+
+         // check whether array is empty
+         if n equals 0
+            return new empty array
+         end if
+
           for i from 0 to n-1
               // Assume the current index is the minimum
               minIndex = i
@@ -148,10 +154,15 @@ public class SelectionSort {
           end for
         end function
 
-         */
+    **/
 
     public static int[] efficientSelectionSort(int[] arr){
         int size = arr.length;
+
+        //check whether array is empty
+        if(size == 0){
+            return new int[0];
+        }
 
         for(int i = 0; i < size-1; i++){
             //set minimum to i

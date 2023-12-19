@@ -2,7 +2,7 @@ package Algorithms.Sorting_Algorithms;
 
 public class HeapSort {
 
-    /*
+    /**
         Description:
         Heap Sort is a comparison-based sorting algorithm that uses a binary heap data structure
         to build a max-heap or min-heap and perform sorting.
@@ -15,6 +15,14 @@ public class HeapSort {
 
         Pseudo Code:
         function heapSort(arr: list)
+             n = length(A)
+
+             // check whether array is empty
+             if n equals 0
+                print "array is empty"
+                return
+             end if
+
             // Build a max-heap from the array
             buildMaxHeap(arr)
 
@@ -54,10 +62,16 @@ public class HeapSort {
 
         heapSort(array)
         print("After Sorting Array: ", array)
-    */
+    **/
 
     public static void heapSort(int[] arr) {
         int n = arr.length;
+
+        // Check whether the array is empty
+        if (n == 0) {
+            System.out.println("Array is empty. Nothing to sort.");
+            return;
+        }
 
         // Build a max-heap from the array
         buildMaxHeap(arr);
