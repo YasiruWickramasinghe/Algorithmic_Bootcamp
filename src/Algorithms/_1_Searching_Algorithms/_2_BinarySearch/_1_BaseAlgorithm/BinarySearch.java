@@ -69,22 +69,31 @@ public class BinarySearch {
         int right = arr.length - 1;
 
         while (left <= right) {
-            int mid = (left + right) / 2;
 
-            if (arr[mid] == target) {
-                return mid;
-            } else if (arr[mid] < target) {
+            //might be possible that (start + end) exceed the range of integer
+                //int mid = (left + right) / 2;
+
+            //this will work
+            // left + (right - left) / 2    ->  (2left + right - left) / 2   ->  (left + right) / 2
+            int mid = left + (right - left) / 2;
+
+
+
+            if (target < arr[mid] ) {
+                right = mid - 1;
+            } else if (target > arr[mid]) {
                 left = mid + 1;
             } else {
-                right = mid - 1;
+                //answer
+                return mid;
             }
         }
         return -1;
     }
 
     public static void main(String[] args) {
-        int arr[] = {1, 2, 3, 4, 5, 6, 7};
-        int target = 5;
+        int arr[] = {-18, -12, -3, 0, 2, 2, 3, 15, 25, 29, 87};
+        int target = 25;
 
         int result = binarySearch(arr, target);
 
