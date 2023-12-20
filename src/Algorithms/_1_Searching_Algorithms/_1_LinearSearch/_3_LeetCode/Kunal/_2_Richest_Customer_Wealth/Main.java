@@ -1,6 +1,6 @@
-package Algorithms._1_Searching_Algorithms._1_LinearSearch._3_LeetCode;
+package Algorithms._1_Searching_Algorithms._1_LinearSearch._3_LeetCode.Kunal._2_Richest_Customer_Wealth;
 
-public class RichestCustomerWealth {
+public class Main {
 
     private static int MaxWealth(int[][] arr) {
 

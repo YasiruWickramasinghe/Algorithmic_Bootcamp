@@ -1,6 +1,6 @@
-package Algorithms._1_Searching_Algorithms._1_LinearSearch._2_Examples;
+package Algorithms._1_Searching_Algorithms._1_LinearSearch._2_Examples._2_Search_In_Range;
 
-public class SearchInRange {
+public class Main {
     public static void main(String[] args) {
         int[] arr = {12, -4, 68, 9, -54, 41, 18};
         int target = -54;

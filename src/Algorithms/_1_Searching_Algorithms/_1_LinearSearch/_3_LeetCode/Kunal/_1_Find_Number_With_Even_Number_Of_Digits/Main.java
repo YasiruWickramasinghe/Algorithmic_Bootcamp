@@ -1,6 +1,6 @@
-package Algorithms._1_Searching_Algorithms._1_LinearSearch._3_LeetCode;
+package Algorithms._1_Searching_Algorithms._1_LinearSearch._3_LeetCode.Kunal._1_Find_Number_With_Even_Number_Of_Digits;
 
-public class FindNumberWithEvenNumberOfDigits {
+public class Main {
     //solution 1
     private static int evenNumberDigits(int[] arr) {
         if (arr.length == 0) {

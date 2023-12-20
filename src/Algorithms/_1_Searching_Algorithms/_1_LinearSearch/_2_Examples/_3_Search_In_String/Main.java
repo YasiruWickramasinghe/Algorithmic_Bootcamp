@@ -1,6 +1,6 @@
-package Algorithms._1_Searching_Algorithms._1_LinearSearch._2_Examples;
+package Algorithms._1_Searching_Algorithms._1_LinearSearch._2_Examples._3_Search_In_String;
 
-public class SearchInString {
+public class Main {
 
     //Search Character in string using for loop
     public static boolean stringLinearSearch(String str, char target) {

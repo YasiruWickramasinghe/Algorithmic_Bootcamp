@@ -1,6 +1,6 @@
-package Algorithms._1_Searching_Algorithms._1_LinearSearch._2_Examples;
+package Algorithms._1_Searching_Algorithms._1_LinearSearch._2_Examples._4_Search_In_2D_Array;
 
-public class SearchIn2DArray {
+public class Main {
     private static boolean search(int[][] arr, int target) {
         //check whether array is empty
         if (arr.length == 0) {

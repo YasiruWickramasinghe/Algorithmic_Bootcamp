@@ -19,6 +19,7 @@ public class OrderAgnosticBinarySearch {
             //} else {
             //    isAsc = false;
             //}
+
         boolean isAsc = arr[left] < arr[right];
 
         while (left <= right) {
