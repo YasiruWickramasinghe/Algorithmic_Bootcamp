@@ -38,16 +38,16 @@ public class Main {
             // The ceiling of a number in an array is the smallest number in the array that is greater than or equal to the given number.
 
         int[] arr = {-45, -21,-3, 17, 21, 49, 98}; // This array is sorted in acs order therefore we know we can use binary search
-        //int target = 18;
+        int target = 18;
 
         // if ceiling target value is greater than to last element of array then have to return -1
-        int target = 99;
+        //int target = 99;
 
         int res = ceilingOfANumber(arr, target);
 
         if(res != -1){
             //print value of ceiling number
-            System.out.println("Ceiling of " + target + " is at index " + res + " and that value is : " + arr[res]);
+            System.out.printf("Ceiling of %d is at index %d and its value is: %d%n", target, res, arr[res]);
         } else {
             System.out.println("No Ceiling number found. This target element greater than the last element of array");
         }

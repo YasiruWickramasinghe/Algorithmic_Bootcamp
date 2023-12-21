@@ -47,7 +47,8 @@ public class Main {
 
         if(res != -1){
             //print value of ceiling number
-            System.out.println("Floor of " + target + " is at index " + res + " and that value is : " + arr[res]);
+            System.out.printf("Floor of %d is at index %d and its value is: %d%n", target, res, arr[res]);
+
         } else {
             System.out.println("No Floor number found. This target element less than the initial element of array");
         }
