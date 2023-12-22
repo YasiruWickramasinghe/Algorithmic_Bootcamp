@@ -79,10 +79,10 @@ public class BinarySearch {
             int mid = left + (right - left) / 2;
 
 
-            if (target < arr[mid]) {
-                right = mid - 1;
-            } else if (target > arr[mid]) {
+            if (target > arr[mid]) {
                 left = mid + 1;
+            } else if (target < arr[mid]) {
+                right = mid - 1;
             } else {
                 //answer
                 return mid;
