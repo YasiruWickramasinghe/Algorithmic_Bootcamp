@@ -11,7 +11,7 @@ public class SelectionSort {
 
     Steps:
         Initialization: The entire array is considered unsorted initially.
-        Find Minimum: Find the minimum element from the unsorted part of the array.
+        Find Minimum or Maximum: Find the minimum or maximum element from the unsorted part of the array.
         Swap: Swap the minimum element with the first element of the unsorted part.
         Move Boundary: Move the boundary between the sorted and unsorted parts one step to the right.
         Repeat: Repeat steps 2-4 until the entire array is sorted.
@@ -23,6 +23,9 @@ public class SelectionSort {
         define j value and its set to i+1
         check if A[j] value is less than the a[minIndex] if yes then set minIndex to j
         after inner for loop check minIndex is not equal to i value if not equal then swap the A[i] and a[minIndex]
+
+         End of the first for loop check minIndex is equal to the i
+         if minIndex and i value are same no swapping happened, therefore no need to swap
 
             //Test :
 
@@ -82,7 +85,44 @@ public class SelectionSort {
              print("After Sorting Array: ", array);
    **/
 
+    public static void main(String[] args) {
+        int arr[] = {7, 4, 10, 3, 2, 11};
+        System.out.println("Before Sorting Array: " + Arrays.toString(arr));
 
+        int sortedArr[] = selectionSort(arr);
+        System.out.println("After Sorting Array: " + Arrays.toString(sortedArr));
+
+
+    }
+
+    private static int[] selectionSort(int[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            //find the max item in the remaining array and swap with correct index
+            int lastIndex = arr.length - i - 1;
+            int maxIndex = getMax(arr,0, lastIndex);
+            swap(arr, maxIndex, lastIndex);
+        }
+        return arr;
+    }
+
+    private static int getMax(int[] arr, int startIndex, int lastIndex) {
+        int max = startIndex;
+        for (int i = startIndex; i <= lastIndex; i++) {
+            if(arr[max] < arr[i]){
+                max = i;
+            }
+        }
+        return max;
+    }
+
+    private static void swap(int[] arr,int first, int second) {
+        int temp = arr[first];
+        arr[first] = arr[second];
+        arr[second] = temp;
+    }
+
+
+    /*
 
     public static int[] selectionSort(int[] arr){
         int size = arr.length;
@@ -111,6 +151,7 @@ public class SelectionSort {
         }
         return arr;
     }
+    */
 
     /**
     //More Efficient way in selection sort
@@ -155,14 +196,9 @@ public class SelectionSort {
         end function
 
     **/
-
+    /*
     public static int[] efficientSelectionSort(int[] arr) {
         int size = arr.length;
-
-        //check whether array is empty
-        if (size == 0) {
-            return new int[0];
-        }
 
         for (int i = 0; i < size - 1; i++) {
             //set minimum to i
@@ -189,6 +225,9 @@ public class SelectionSort {
         return arr;
     }
 
+     */
+
+    /*
     public static void main(String[] args) {
         int arr[] = {7, 4, 10, 3, 2, 11};
         System.out.println("Before Sorting Array: " + Arrays.toString(arr));
@@ -197,9 +236,10 @@ public class SelectionSort {
         System.out.println("After Sorting Array: " + Arrays.toString(sortedArr));
 
         //to check this efficient way sorting comment sorted array above and uncomment this
-        /*
-        int sortedArrEfficientWay[] = efficientSelectionSort(arr);
-        System.out.println("After Sorting Array with Efficient Way: " + Arrays.toString(sortedArrEfficientWay));
-         */
+
+        //int sortedArrEfficientWay[] = efficientSelectionSort(arr);
+        //System.out.println("After Sorting Array with Efficient Way: " + Arrays.toString(sortedArrEfficientWay));
+
     }
+     */
 }
