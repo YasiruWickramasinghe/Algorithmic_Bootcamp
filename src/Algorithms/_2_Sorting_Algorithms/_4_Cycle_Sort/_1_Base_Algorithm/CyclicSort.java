@@ -17,7 +17,7 @@ public class CyclicSort {
 
     public static void main(String[] args) {
         // Input array
-        int[] arr = {5, 4, 3, 2, 1};
+        int[] arr = {5, 4, 3, 2, 1}; // Array in the range 1 to n // Important! correct index is (value - 1) like array[i] - 1
 
         // Perform cyclic sort on the array
         cyclicSort(arr);
