@@ -6,26 +6,14 @@ public class SelectionSort {
     /**
     Description:
         Selection Sort divides the input array into two parts: the sorted and the unsorted. In each iteration,
-         it finds the minimum element from the unsorted part and swaps it with the first element of the unsorted part.
+         it finds the maximum element from the unsorted part and swaps it with the last element of the unsorted part.
          This process is repeated until the entire array is sorted.
 
     Steps:
         Initialization: The entire array is considered unsorted initially.
-        Find Minimum or Maximum: Find the minimum or maximum element from the unsorted part of the array.
-        Swap: Swap the minimum element with the first element of the unsorted part.
-        Move Boundary: Move the boundary between the sorted and unsorted parts one step to the right.
+        Find Maximum: Find the minimum or maximum element from the unsorted part of the array.
+        Swap: Swap the maximum element with the last element of the array. (Only swap if the maximum element is not already at its correct position)
         Repeat: Repeat steps 2-4 until the entire array is sorted.
-
-        define array
-        define for loop for each passes 0 to length-1
-        define minimum index as i
-        define another for loop for the check minimum value
-        define j value and its set to i+1
-        check if A[j] value is less than the a[minIndex] if yes then set minIndex to j
-        after inner for loop check minIndex is not equal to i value if not equal then swap the A[i] and a[minIndex]
-
-         End of the first for loop check minIndex is equal to the i
-         if minIndex and i value are same no swapping happened, therefore no need to swap
 
             //Test :
 
@@ -55,26 +43,32 @@ public class SelectionSort {
 
     Pseudo Code:
 
-        function selectionSort(A: list)
+     function selectionSort(arr):
+        for i from 0 to length of arr - 1:
+            lastIndex = length of arr - i - 1
+            maxIndex = getMaxIndex(arr, 0, lastIndex)
 
-          n = length(A)
-          for i from 0 to n-1
-              // Assume the current index is the minimum
-              minIndex = i
+            if maxIndex != lastIndex:
+                swap(arr, maxIndex, lastIndex)
 
-              // Find the minimum element in the unsorted part
-              for j from i+1 to n-1
-                  if A[j] < A[minIndex]
-                      minIndex = j
-                  end if
-              end for
+        return arr
 
-              // Swap the minimum element with the first element of the unsorted part
-              swap(A[i], A[minIndex])
+     function getMaxIndex(arr, startIndex, lastIndex):
+        max = startIndex
+        for i from startIndex to lastIndex:
+            if arr[max] < arr[i]:
+                max = i
+        return max
 
-          end for
+     function swap(arr, first, second):
+        temp = arr[first]
+        arr[first] = arr[second]
+        arr[second] = temp
 
-        end function
+     main():
+        arr = [7, 4, 10, 3, 2, 11]
+        sortedArr = selectionSort(arr)
+        print("Sorting Array: " + sortedArr)
 
         //Test
 
@@ -87,12 +81,8 @@ public class SelectionSort {
 
     public static void main(String[] args) {
         int arr[] = {7, 4, 10, 3, 2, 11};
-        System.out.println("Before Sorting Array: " + Arrays.toString(arr));
-
         int sortedArr[] = selectionSort(arr);
-        System.out.println("After Sorting Array: " + Arrays.toString(sortedArr));
-
-
+        System.out.println("Sorted Array: " + Arrays.toString(sortedArr));
     }
 
     private static int[] selectionSort(int[] arr) {
@@ -100,7 +90,11 @@ public class SelectionSort {
             //find the max item in the remaining array and swap with correct index
             int lastIndex = arr.length - i - 1;
             int maxIndex = getMax(arr,0, lastIndex);
-            swap(arr, maxIndex, lastIndex);
+
+            // Only swap if the maximum element is not already at its correct position
+            if (maxIndex != lastIndex) {
+                swap(arr, maxIndex, lastIndex);
+            }
         }
         return arr;
     }
@@ -120,6 +114,7 @@ public class SelectionSort {
         arr[first] = arr[second];
         arr[second] = temp;
     }
+
 
 
     /*

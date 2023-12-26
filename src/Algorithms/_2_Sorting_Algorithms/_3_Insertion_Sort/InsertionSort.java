@@ -56,28 +56,20 @@ public class InsertionSort {
 
     Pseudo Code:
 
-        function insertionSort(A: list)
+     function insertionSort(arr):
+        for i from 0 to length(arr) - 1:
+            for j from i + 1 to j > 0:
+                if arr[j] < arr[j-1]:
+                    swap(arr, j, j-1)
+                else:
+                    break
+     return arr
 
-         n = length(A)
+     function swap(arr, first, second):
+        temp = arr[first]
+        arr[first] = arr[second]
+        arr[second] = temp
 
-         // check whether array is empty
-         if n equals 0
-            return new empty array
-         end if
-
-          for i from 1 to n-1
-              // Take an element from the unsorted part
-              key = A[i]
-
-              // Insert the element into its correct position in the sorted part
-              j = i - 1
-              while j >= 0 and A[j] > key
-                  A[j + 1] = A[j]
-                  j = j - 1
-              end while
-              A[j + 1] = key
-          end for
-        end function
 
         //Test
              array = [7, 4, 10, 3, 2, 11]
@@ -87,6 +79,36 @@ public class InsertionSort {
              print("After Sorting Array: ", array);
        **/
 
+    public static void main(String[] args) {
+        int[] arr = {5, 3, 4, 1, 2};
+        int[] sortedArr = insertionSort(arr);
+        System.out.println("Sorted Array: " + Arrays.toString(sortedArr));
+
+    }
+
+    public static int[] insertionSort(int[] arr) {
+
+        for (int i = 0; i < arr.length - 1; i++) {
+            for (int j = i+1; j > 0; j--) {
+                if(arr[j] < arr[j-1]){
+                    swap(arr, j,j-1);
+                }else {
+                    break;
+                }
+            }
+        }
+        return arr;
+    }
+
+    private static void swap(int[] arr,int first, int second) {
+        int temp = arr[first];
+        arr[first] = arr[second];
+        arr[second] = temp;
+    }
+
+
+
+    /*
     public static int[] insertionSort(int[] arr) {
         int size = arr.length;
 
@@ -135,9 +157,9 @@ public class InsertionSort {
         for (int sortedArr : sortedArrs) {
             System.out.print(sortedArr + ",");
         }
-
-
     }
+
+     */
 }
 
 
