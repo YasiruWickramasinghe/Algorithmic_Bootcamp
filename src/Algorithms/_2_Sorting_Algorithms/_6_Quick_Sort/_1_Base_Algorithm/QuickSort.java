@@ -1,4 +1,4 @@
-package Algorithms._2_Sorting_Algorithms._6_Quick_Sort;
+package Algorithms._2_Sorting_Algorithms._6_Quick_Sort._1_Base_Algorithm;
 
 import java.util.Arrays;
 

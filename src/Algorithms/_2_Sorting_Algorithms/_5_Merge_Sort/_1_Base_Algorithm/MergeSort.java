@@ -1,4 +1,4 @@
-package Algorithms._2_Sorting_Algorithms._5_Merge_Sort;
+package Algorithms._2_Sorting_Algorithms._5_Merge_Sort._1_Base_Algorithm;
 
 public class MergeSort {
 
