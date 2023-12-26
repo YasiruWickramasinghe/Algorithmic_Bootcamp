@@ -1,17 +1,15 @@
 package Algorithms._2_Sorting_Algorithms._4_Cycle_Sort._2_LeetCode.Kunal._1_Missing_Number;
 
-import java.util.Arrays;
-
 public class Main {
     //This is Amazon Question
     public static void main(String[] args) {
         int[] arr = {4,0,2,1}; // Array in the range 0 to n // Important! correct index is (value) like array[i]
         //int[] arr = {4,5,2,1}; // Array in the range 1 to n // Important! correct index is (value - 1) like array[i] - 1
-        int ans = MissingNumber(arr);
+        int ans = missingNumber(arr);
         System.out.println("Missing Number is : " + ans);
     }
 
-    static int MissingNumber(int[] arr) {
+    static int missingNumber(int[] arr) {
         int i = 0;
         while(i < arr.length){
             int correctPosition = arr[i]; // because array start index 0 // here correct index is that index because here array start from 0, not 1 if it start from 1 then correctIndex is arr[i] - 1;
