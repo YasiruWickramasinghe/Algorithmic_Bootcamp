@@ -14,7 +14,7 @@ public class Main {
     static int MissingNumber(int[] arr) {
         int i = 0;
         while(i < arr.length){
-            int correctPosition = arr[i]; // here correct index is that index because here array start from 0, not 1 if it start from 1 then correctIndex is arr[i] - 1;
+            int correctPosition = arr[i]; // because array start index 0 // here correct index is that index because here array start from 0, not 1 if it start from 1 then correctIndex is arr[i] - 1;
             if(arr[i] < arr.length && arr[i] != arr[correctPosition]){
                 swap(arr, i , correctPosition);
             } else {
@@ -24,7 +24,7 @@ public class Main {
 
         //search for first missing number
         for (int index = 0; index <  arr.length; index++) {
-            if(arr[index] != index){
+            if(arr[index] != index){ // index = index because array start index 0
                 return index;
             }
         }
