@@ -1,4 +1,4 @@
-package Algorithms._0_Maths._1_Find_Odd_or_Even_in_Binary_Fomat;
+package Algorithms._0_Maths._1_Find_Odd_or_Even;
 
 public class Main {
     //check number is odd or even using binary
