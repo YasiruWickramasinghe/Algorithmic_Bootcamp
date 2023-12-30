@@ -27,31 +27,27 @@ This repository is dedicated to the exploration and implementation of fundamenta
 		3)Insertion Sort
 
   	3) Recursion Basic (Part 1)
-   		i)   Linear Recursion
-     		ii)  Divide and Conquer
+   		1)Linear Recursion
+     		2)Divide and Conquer
 
     	4) Maths for Algorithm
-     		i)   Bit Manipulation
-       		ii)  Decimal Manipulation
+     		1)Bit Manipulation
+       		2)Decimal Manipulation
 
 	5) Recursion - Sorting Algorithm (Part 2)
- 
- 		i)   Merge Sort
-		ii)  Quick Sort
+ 		1)Merge Sort
+		2)Quick Sort
 
    	6) Backtracking
 
     	7) Tree Algorithm
-     
-     		i)   	Binary tree
-       		ii) 	AVL Tree
-	 	iii) 	Segment Tree
+     		1)Binary tree
+       		2)AVL Tree
+	 	3)Segment Tree
 
    	8) Heap Algorithm
-    
-    		i) Heap Sort
+    		1)Heap Sort
     		
-
 	8) Graph Algorithms
 		1)Breadth-First Search (BFS)
 		2)Depth-First Search (DFS)
