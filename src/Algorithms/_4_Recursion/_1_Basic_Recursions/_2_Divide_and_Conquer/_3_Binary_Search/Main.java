@@ -1,4 +1,4 @@
-package Algorithms._4_Recursion._1_Intro_to_Basic._3_Binary_Search;
+package Algorithms._4_Recursion._1_Basic_Recursions._2_Divide_and_Conquer._3_Binary_Search;
 
 public class Main {
 //this is example for divide and conquer recurrence

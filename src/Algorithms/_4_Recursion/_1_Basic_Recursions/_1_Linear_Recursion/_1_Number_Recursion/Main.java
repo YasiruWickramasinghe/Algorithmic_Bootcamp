@@ -1,4 +1,4 @@
-package Algorithms._4_Recursion._1_Intro_to_Basic._1_Number_Recursion;
+package Algorithms._4_Recursion._1_Basic_Recursions._1_Linear_Recursion._1_Number_Recursion;
 
 public class Main {
     public static void main(String[] args) {

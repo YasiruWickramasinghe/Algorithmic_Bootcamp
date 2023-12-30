@@ -1,4 +1,4 @@
-package Algorithms._4_Recursion._1_Intro_to_Basic._2_Fibonacci_Number;
+package Algorithms._4_Recursion._1_Basic_Recursions._1_Linear_Recursion._2_Fibonacci_Number;
 
 public class Main {
     //this is example for linear recurrence

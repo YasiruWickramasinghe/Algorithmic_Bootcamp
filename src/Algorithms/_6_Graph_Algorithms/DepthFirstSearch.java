@@ -1,4 +1,4 @@
-package Algorithms._7_Graph_Algorithms;
+package Algorithms._6_Graph_Algorithms;
 
 public class DepthFirstSearch {
     //Description:
