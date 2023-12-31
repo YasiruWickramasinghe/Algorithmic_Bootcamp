@@ -17,29 +17,46 @@ This repository is dedicated to the exploration and implementation of fundamenta
 
 ## Algorithms
 
-	1) Sorting Algorithms
- 		1)Bubble Sort
-		2)Selection Sort
-		3)Insertion Sort
-		4)Merge Sort
-		5)Quick Sort
-		6)Heap Sort
-
-	2) Searching Algorithms
+	1) Basic Searching Algorithms
 		1)Linear Search
 		2)Binary Search
 
-	3) Graph Algorithms
+	2) Basic Sorting Algorithms
+ 		1)Bubble Sort
+		2)Selection Sort
+		3)Insertion Sort
+
+  	3) Recursion Basic (Part 1)
+   		1)Linear Recursion
+     		2)Divide and Conquer
+
+    	4) Maths for Algorithm
+     		1)Bit Manipulation
+       		2)Decimal Manipulation
+
+	5) Recursion - Sorting Algorithm (Part 2)
+ 		1)Merge Sort
+		2)Quick Sort
+
+   	6) Backtracking
+
+    	7) Tree Algorithm
+     		1)Binary tree
+       		2)AVL Tree
+	 	3)Segment Tree
+
+   	8) Heap Algorithm
+    		1)Heap Sort
+    		
+	8) Graph Algorithms
 		1)Breadth-First Search (BFS)
 		2)Depth-First Search (DFS)
 		3)Dijkstra's Algorithm (Shortest Path)
 
-	4) Dynamic Programming
-	5) Greedy Algorithms
-	6) Divide and Conquer
-	7) Recursion
-	8) String Algorithms
-	9) Backtracking
-	10) Bit Manipulation
+	9) Dynamic Programming
+	10) Greedy Algorithms
+	11) String Algorithms
+	12) Backtracking
+
 
 
