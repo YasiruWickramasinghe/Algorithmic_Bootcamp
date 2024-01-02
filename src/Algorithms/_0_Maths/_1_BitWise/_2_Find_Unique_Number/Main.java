@@ -1,4 +1,4 @@
-package Algorithms._0_Maths._2_Find_Unique_Number;
+package Algorithms._0_Maths._1_BitWise._2_Find_Unique_Number;
 
 public class Main {
     public static void main(String[] args) {

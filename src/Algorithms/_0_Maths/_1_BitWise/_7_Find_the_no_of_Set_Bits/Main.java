@@ -1,4 +1,4 @@
-package Algorithms._0_Maths._7_Find_the_no_of_Set_Bits;
+package Algorithms._0_Maths._1_BitWise._7_Find_the_no_of_Set_Bits;
 
 public class Main {
     public static void main(String[] args) {

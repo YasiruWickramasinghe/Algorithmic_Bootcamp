@@ -1,4 +1,4 @@
-package Algorithms._0_Maths._1_Find_Odd_or_Even;
+package Algorithms._0_Maths._1_BitWise._1_Find_Odd_or_Even;
 
 public class Main {
     //check number is odd or even using binary

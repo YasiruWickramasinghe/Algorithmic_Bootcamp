@@ -1,4 +1,4 @@
-package Algorithms._0_Maths._9_Flipping_an_Image;
+package Algorithms._0_Maths._1_BitWise._9_Flipping_an_Image;
 
 public class Main {
     public int[][] flipAndInvertImage(int[][] image) {

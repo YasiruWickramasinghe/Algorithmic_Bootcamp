@@ -1,4 +1,4 @@
-package Algorithms._0_Maths._8_Range_XOR;
+package Algorithms._0_Maths._1_BitWise._8_Range_XOR;
 
 public class Main {
     public static void main(String[] args) {

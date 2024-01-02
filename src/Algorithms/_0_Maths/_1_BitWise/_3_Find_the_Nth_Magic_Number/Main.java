@@ -1,4 +1,4 @@
-package Algorithms._0_Maths._3_Find_the_Nth_Magic_Number;
+package Algorithms._0_Maths._1_BitWise._3_Find_the_Nth_Magic_Number;
 
 public class Main {
 

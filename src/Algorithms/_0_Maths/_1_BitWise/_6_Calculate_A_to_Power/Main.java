@@ -1,4 +1,4 @@
-package Algorithms._0_Maths._6_Calculate_A_to_Power;
+package Algorithms._0_Maths._1_BitWise._6_Calculate_A_to_Power;
 
 public class Main {
     public static void main(String[] args) {

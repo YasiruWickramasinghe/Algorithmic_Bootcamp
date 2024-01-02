@@ -1,4 +1,4 @@
-package Algorithms._0_Maths._4_Find_no_of_Digits_in_Base_B;
+package Algorithms._0_Maths._1_BitWise._4_Find_no_of_Digits_in_Base_B;
 
 public class Main {
     public static void main(String[] args) {
