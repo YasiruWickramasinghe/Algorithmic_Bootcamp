@@ -1,63 +1,68 @@
-package Algorithms._2_Sorting_Algorithms._5_Merge_Sort._1_Base_Algorithm;
+package Algorithms._4_Recursion._5_Merge_Sort._2_In_Place_MergeSort;
 
 import java.util.Arrays;
 
-public class MergeSort {
+/**
+ *
+ * In-Place Merge Sort
+ *
+ Description:
+    Merge Sort is a divide-and-conquer algorithm that divides the array into two halves,
+    recursively sorts them, and then merges the sorted halves.
 
-    /**
-        Description:
-        Merge Sort is a divide-and-conquer algorithm that divides the array into two halves,
-        recursively sorts them, and then merges the sorted halves.
+ Steps:
+    1. Divide: Split the array into two halves.
+    2. Recursively Sort: Apply Merge Sort to each half.
+    3. Merge: Merge the sorted halves into a single sorted array.
 
-        Steps:
-        1. Divide: Split the array into two halves.
-        2. Recursively Sort: Apply Merge Sort to each half.
-        3. Merge: Merge the sorted halves into a single sorted array.
+ Pseudo Code:
 
-        Pseudo Code:
-             function main():
-             arr = [5, 4, 3, 2, 1]
-             mergeSortInPlace(arr, 0, length(arr))
-             print(arr)
+         function main():
+         arr = [5, 4, 3, 2, 1]
+         mergeSortInPlace(arr, 0, length(arr))
+         print(arr)
 
-             function mergeSortInPlace(arr, start, end):
-             if end - start == 1:
-             return
+         function mergeSortInPlace(arr, start, end):
+         if end - start == 1:
+         return
 
-             mid = (start + end) / 2
-             mergeSortInPlace(arr, start, mid)
-             mergeSortInPlace(arr, mid, end)
-             mergeInPlace(arr, start, mid, end)
+         mid = (start + end) / 2
+         mergeSortInPlace(arr, start, mid)
+         mergeSortInPlace(arr, mid, end)
+         mergeInPlace(arr, start, mid, end)
 
-             function mergeInPlace(arr, start, mid, end):
-             mix = new int[end - start]
-             i = start
-             j = mid
-             k = 0
+         function mergeInPlace(arr, start, mid, end):
+         mix = new int[end - start]
+         i = start
+         j = mid
+         k = 0
 
-             while i < mid and j < end:
-             if arr[i] < arr[j]:
-             mix[k] = arr[i]
-             i++
-             else:
-             mix[k] = arr[j]
-             j++
-             k++
+         while i < mid and j < end:
+         if arr[i] < arr[j]:
+         mix[k] = arr[i]
+         i++
+         else:
+         mix[k] = arr[j]
+         j++
+         k++
 
-             while i < mid:
-             mix[k] = arr[i]
-             i++
-             k++
+         while i < mid:
+         mix[k] = arr[i]
+         i++
+         k++
 
-             while j < end:
-             mix[k] = arr[j]
-             j++
-             k++
+         while j < end:
+         mix[k] = arr[j]
+         j++
+         k++
 
-             for l in range(0, length(mix)):
-             arr[start + l] = mix[l]
+         for l in range(0, length(mix)):
+         arr[start + l] = mix[l]
 
-    **/
+
+ **/
+
+public class Main {
 
     public static void main(String[] args) {
         int[] arr = {5,4,3,2,1};
