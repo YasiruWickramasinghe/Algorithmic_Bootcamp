@@ -48,33 +48,43 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        int[] arr = {5,4,3,2,1};
-        quickSort(arr,0, arr.length-1);
+        // Initialize an array of integers
+        int[] arr = {5, 4, 3, 2, 1};
+
+        // Call the quickSort method to sort the array
+        quickSort(arr, 0, arr.length-1);
+
+        // Print the sorted array
         System.out.println(Arrays.toString(arr));
     }
 
-    static void quickSort(int[] arr, int low, int high){
-        if(low >= high){
+    // QuickSort method
+    static void quickSort(int[] arr, int low, int high) {
+        // Base case: if the array has one element or is empty, it is already sorted
+        if (low >= high) {
             return;
         }
 
+        // Initialize variables for partitioning
         int start = low;
         int end = high;
         int mid = start + (end - start) / 2;
-        int pivot = arr[mid]; // he we can use any random number or last element or mid any element
+        int pivot = arr[mid]; // Choose the pivot element (in this case, it's the middle element), we can use any random element
 
-        while(start <= end){
-
-            //also reason why if it already sorted it will not swap
-            while (arr[start] < pivot){
+        // Partition the array
+        while (start <= end) {
+            // Find an element on the left that is greater than or equal to the pivot
+            while (arr[start] < pivot) {
                 start++;
             }
-            while (arr[end] > pivot){
+
+            // Find an element on the right that is less than or equal to the pivot
+            while (arr[end] > pivot) {
                 end--;
             }
 
-            //swap
-            if(start <= end){
+            // Swap the elements at the start and end indices
+            if (start <= end) {
                 int temp = arr[start];
                 arr[start] = arr[end];
                 arr[end] = temp;
@@ -83,8 +93,9 @@ public class Main {
             }
         }
 
-        //now pivot is at correct index please sort two halves now
+        // Recursively sort the subarrays on the left and right of the pivot
         quickSort(arr, low, end);
-        quickSort(arr,start, high);
+        quickSort(arr, start, high);
     }
 }
+
