@@ -13,7 +13,7 @@ public class Main {
     }
 
     static List<List<Integer>> subset(int[] arr){
-        //outerList, Main List
+        //outerList, Data_Structures._4_Trees._1_Binary_Trees.Main List
         List<List<Integer>> outer = new ArrayList<>();
         outer.add(new ArrayList<>());
 

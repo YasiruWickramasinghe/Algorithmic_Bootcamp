@@ -17,7 +17,7 @@ public class Main {
         //sort the array
         Arrays.sort(arr);
 
-        //outerList, Main List
+        //outerList, Data_Structures._4_Trees._1_Binary_Trees.Main List
         List<List<Integer>> outer = new ArrayList<>();
         outer.add(new ArrayList<>());
 
