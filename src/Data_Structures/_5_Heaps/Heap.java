@@ -1,3 +1,5 @@
+package Data_Structures._5_Heaps;
+
 import java.util.ArrayList;
 
 class Heap<T extends Comparable<T>> {
@@ -26,6 +28,8 @@ class Heap<T extends Comparable<T>> {
     return index * 2 + 2;
   }
 
+  //insert a value
+  //here use up heap -> mean add to bottom to an element and go through the upward
   public void insert(T value) {
     list.add(value);
     upheap(list.size() - 1);
@@ -41,6 +45,8 @@ class Heap<T extends Comparable<T>> {
     }
   }
 
+  //remove a value
+  //here use down heap -> mean remove top element and go through the downward
   public T remove() throws Exception {
     if (list.isEmpty()) {
       throw new Exception("Removing from an empty heap!");
@@ -75,6 +81,8 @@ class Heap<T extends Comparable<T>> {
     }
   }
 
+  //HeapSort
+  //by removing element in heap we can ensure the heap sort or priority queue
   public ArrayList<T> heapSort() throws Exception {
     ArrayList<T> data = new ArrayList<>();
     while(!list.isEmpty()) {
