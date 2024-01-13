@@ -6,12 +6,12 @@ This repository is dedicated to the exploration and implementation of fundamenta
 
 	1) Arrays
  	2) ArrayList
-	2) Linked Lists
-	3) Stacks & Queue	
-	4) Trees
-	5) Heap 
-	6) HashMap
-	7) HashSet
+	3) Linked Lists
+	4) Stacks & Queue	
+	5) Trees
+	6) Heap 
+	7) HashMap
+	8) HashSet
 
 
 ## Algorithms
@@ -30,21 +30,19 @@ This repository is dedicated to the exploration and implementation of fundamenta
      		1)Star patterns
        		2)Number Patterns
 
-  	3) Recursion Basic (Part 1)
+  	4) Recursion Basic (Part 1)
    		1)Linear Recursion
      		2)Divide and Conquer
 
-    	4) Maths for Algorithm
+    	5) Maths for Algorithm
      		1)Bit Manipulation
        		2)Decimal Manipulation
 
-	5) Recursion - Sorting Algorithm (Part 2)
+	6) Recursion - Sorting Algorithm (Part 2)
  		1)Merge Sort
 		2)Quick Sort
   		3)SubSet SubSequence
     		4)BackTracking
-
-   	6) Backtracking
 
     	7) Tree Algorithm
      		1)BFS
