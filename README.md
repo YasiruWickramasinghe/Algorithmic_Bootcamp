@@ -5,15 +5,14 @@ This repository is dedicated to the exploration and implementation of fundamenta
 ## Data Structures
 
 	1) Arrays
+ 	2) ArrayList
 	2) Linked Lists
-	3) Stacks	
-	4) Queues
-	5) Trees 
-	6) Graphs
-	7) Hash Tables
-	8) Heaps
-	9) Trie
-	10)Disjoint Set 
+	3) Stacks & Queue	
+	4) Trees
+	5) Heap 
+	6) HashMap
+	7) HashSet
+
 
 ## Algorithms
 
@@ -25,6 +24,11 @@ This repository is dedicated to the exploration and implementation of fundamenta
  		1)Bubble Sort
 		2)Selection Sort
 		3)Insertion Sort
+  		4)Cycle Sort
+    
+    	3) Patterns
+     		1)Star patterns
+       		2)Number Patterns
 
   	3) Recursion Basic (Part 1)
    		1)Linear Recursion
@@ -37,26 +41,17 @@ This repository is dedicated to the exploration and implementation of fundamenta
 	5) Recursion - Sorting Algorithm (Part 2)
  		1)Merge Sort
 		2)Quick Sort
+  		3)SubSet SubSequence
+    		4)BackTracking
 
    	6) Backtracking
 
     	7) Tree Algorithm
-     		1)Binary tree
-       		2)AVL Tree
-	 	3)Segment Tree
+     		1)BFS
+       		2)DFS
 
    	8) Heap Algorithm
     		1)Heap Sort
-    		
-	8) Graph Algorithms
-		1)Breadth-First Search (BFS)
-		2)Depth-First Search (DFS)
-		3)Dijkstra's Algorithm (Shortest Path)
-
-	9) Dynamic Programming
-	10) Greedy Algorithms
-	11) String Algorithms
-	12) Backtracking
 
 
 
