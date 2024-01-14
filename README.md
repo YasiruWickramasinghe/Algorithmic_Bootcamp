@@ -13,6 +13,10 @@ This repository is dedicated to the exploration and implementation of fundamenta
 	7) HashMap
 	8) HashSet
 
+ 	Not Covered
+  	-----------
+   	9) Graph
+
 
 ## Algorithms
 
@@ -42,7 +46,6 @@ This repository is dedicated to the exploration and implementation of fundamenta
  		1)Merge Sort
 		2)Quick Sort
   		3)SubSet SubSequence
-    		4)BackTracking
 
     	7) Tree Algorithm
      		1)BFS
@@ -50,6 +53,13 @@ This repository is dedicated to the exploration and implementation of fundamenta
 
    	8) Heap Algorithm
     		1)Heap Sort
+
+        Not Covered
+	-----------
+
+	6.2) Backtracking 
+ 	9)   Graph Algorithms
+  	10)  Dynamic Programming
 
 
 
