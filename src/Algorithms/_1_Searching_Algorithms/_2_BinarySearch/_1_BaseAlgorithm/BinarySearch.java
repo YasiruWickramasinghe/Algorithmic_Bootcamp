@@ -92,7 +92,7 @@ public class BinarySearch {
     }
 
     public static void main(String[] args) {
-        int arr[] = {-18, -12, -3, 0, 2, 2, 3, 15, 25, 29, 87};
+        int[] arr = {-18, -12, -3, 0, 2, 2, 3, 15, 25, 29, 87};
         int target = 25;
 
         int result = binarySearch(arr, target);
