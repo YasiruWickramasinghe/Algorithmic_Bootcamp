@@ -5,12 +5,12 @@ public class Main {
         int[] arr = {1, 12, 23, 56, 62, 42, 31, 2};
         int target = 1;
 
-        int mountain = seach(arr, target);
+        int mountain = search(arr, target);
 
         System.out.println(mountain);
     }
 
-    private static int seach(int[] arr, int target) {
+    private static int search(int[] arr, int target) {
         //get the peak index
         int peak  = peakOfMountain(arr);
 

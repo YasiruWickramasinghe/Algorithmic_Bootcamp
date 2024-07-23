@@ -34,7 +34,7 @@ public class Main {
                 left =  mid + 1;
             }
         }
-        //in the end, stsrt == end and pointing to largest number because of the 2 check above
+        //in the end, start == end and pointing to largest number because of the 2 check above
         //start and end are always trying to find max element in the above 2 checks
         //hence, when they are pointing to just one element, that is the maximum value
         //more elaboration : at every point of time for start and end, they have the best possible answer till that time
